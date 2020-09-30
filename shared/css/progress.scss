@@ -1,0 +1,17 @@
+#progress-bar {
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 4px;
+	background-color: black;
+	z-index: 99999999999999;
+}
+
+#progressBar {
+	height: 4px;
+	background-color: #c70000;
+	width: 0px;
+	float: left;
+}

@@ -1,0 +1,36 @@
+.interactive-share {
+    height: 40px;
+    width: 40px;
+    border-radius: 34px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    border: 0;
+}
+
+.social_isolation {
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+    z-index: 0;
+}
+
+.interactive-share:hover {
+    background-color: #bdbdbd;
+    border: 0;
+    cursor: pointer;
+}
+
+.interactive-share[data-network='facebook'] {
+    background-image: url('<%= path %>/facebookIcon.svg');
+    margin-right: 5px;
+}
+
+.interactive-share[data-network='twitter'] {
+    background-image: url('<%= path %>/twitterIcon.svg');
+    margin-right: 2px;
+}

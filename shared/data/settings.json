@@ -1,0 +1,27 @@
+{
+
+    "currentVideo" :         {
+
+        "isPlaying" : false,
+
+        "isPaused" : false,
+
+        "showControls" : false,
+
+        "hasCaptions" : false,
+
+        "displayCaptions" : true,
+
+        "hasAudio" : false,
+
+        "hasSubtitles" : false,
+
+        "overlay" : false,
+
+        "pid" : 0
+
+    },
+
+    "videopath" : "https://interactive.guim.co.uk/embed/aus/2020/frontline/dev-1/episode-1"
+
+}

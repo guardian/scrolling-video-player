@@ -1,0 +1,18 @@
+@import "mq";
+@import "fonts";
+@import "palette";
+@import "interactive";
+@import "nav";
+@import "video";
+@import "progress";
+@import "skip";
+@import "action";
+
+.element-atom,
+.interactive-atom {
+    margin: 0 !important;
+    a {
+				color: #c70000;
+			}
+
+}

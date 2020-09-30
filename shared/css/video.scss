@@ -1,0 +1,150 @@
+@import "mq";
+
+.background {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -10;
+	background-color: black;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to right, #2f262e, transparent);
+	}
+
+	.cinema-foreground {
+		animation: foreground 2s linear forwards;
+	}
+
+	.cinema-background {
+		animation: back 2s linear forwards;
+	}
+
+	@keyframes foreground {
+		from {
+			z-index: -10;
+			opacity: 0;
+		}
+		to {
+			z-index: 10;
+			opacity: 1;
+		}
+	}
+	@keyframes back {
+		from {
+			z-index: 10;
+			opacity: 1;
+		}
+		to {
+			z-index: -10;
+			opacity: 0;
+		}
+	}
+
+	.panel {
+		margin-bottom: 0;
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+		position: absolute;
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		z-index: 10;
+
+		video {
+			width: 100%;
+			object-fit: cover;
+		}
+
+		.video-wrapper.standard {
+			height: 100%;
+		}
+
+		.standard video {
+			height: 100%;
+		}
+
+		.video-wrapper.squared {
+			height: auto;
+		    position: relative;
+		    top: 25%;
+		  /*  transform: translateY(-50%);*/
+		}
+
+	}
+
+	.panel:last-child {
+		opacity: 0.6;
+	}
+
+	video::cue  {
+	font-size:26px;
+	background-color: transparent;
+	color:#ffbc01;
+
+	  	text-shadow:
+	   -1px -1px 0px #000,  
+	    1px -1px 0px #000,
+	    -1px 1px 0px #000,
+	     1px 1px 0px #000;
+
+	}
+
+	@media (max-width: 480px) {
+		video::cue  {
+			font-size:16px;
+
+		}
+	}
+
+	video::-webkit-media-text-track-display-backdrop {
+		background-color: transparent !important; 
+	}
+	video::cue(b) {
+	 font-weight: bold;
+	}
+
+
+/*	video::cue(v[voice="Lisa Groom"]) { color: #ff6600 }
+*/
+}
+
+.lunar {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+40,000000+60&0+0,0.65+20,0.65+80,0+99 */
+background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 20%, rgba(0,0,0,0.65) 40%, rgba(0,0,0,0.65) 60%, rgba(0,0,0,0.65) 80%, rgba(0,0,0,0) 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 20%,rgba(0,0,0,0.65) 40%,rgba(0,0,0,0.65) 60%,rgba(0,0,0,0.65) 80%,rgba(0,0,0,0) 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 20%,rgba(0,0,0,0.65) 40%,rgba(0,0,0,0.65) 60%,rgba(0,0,0,0.65) 80%,rgba(0,0,0,0) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+
+
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* Old shadow dom for play button */
+
+*::-webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* New shadow dom for play button */
+
+/* This one works! */
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+}
+

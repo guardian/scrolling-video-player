@@ -1,0 +1,894 @@
+.action-container {
+
+	background-color: #ffe500;
+	color: black;
+
+
+
+	.element-atom {
+		background-color: #ffe500;
+	}
+	
+/*! CSS Used from: Embedded */
+
+details, figure, footer, summary {
+	display: block;
+}
+[hidden] {
+	display: none;
+}
+b {
+	font-weight: bold;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+figure {
+	margin: 1em 0;
+}
+button {
+	color: black;
+	font: inherit;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+}
+button {
+	overflow: visible;
+}
+button {
+	text-transform: none;
+}
+button {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+::-moz-selection {
+	background: #ffe500;
+	color: #121212;
+}
+::selection {
+	background: #ffe500;
+	color: #121212;
+}
+button {
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+}
+h4 {
+	margin: 0;
+}
+p {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+[hidden] {
+	display: none!important;
+}
+.is-off {
+	display: none;
+}
+.is-on {
+	display: block;
+}
+figure {
+	margin: 0;
+}
+figure.element {
+	margin-top: 1rem;
+	margin-bottom: 0.75rem;
+	position: relative;
+}
+p+figure {
+	margin-top: 0.25rem;
+}
+/*! CSS Used from: https://assets.guim.co.uk/stylesheets/34c092721cd48ba90dfa205824941d3c/print.css ; media=print */
+
+@media print {
+	figure {
+		display: none!important;
+	}
+	* {
+		max-width: 100%!important;
+		margin: 0!important;
+		padding: 0!important;
+		border: 0!important;
+		min-height: 0!important;
+		background-color: #ffffff!important;
+		color: black!important;
+	}
+	p {
+		margin-bottom: 1rem!important;
+	}
+}
+/*! CSS Used from: Embedded */
+
+.atom__button {
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	border: 0;
+	margin: 0;
+}
+.atom__button>.icon {
+	fill: currentColor;
+}
+.atom__button--large {
+	height: 2.25em;
+}
+.atom__button--round {
+	border-radius: 100%;
+}
+.atom__button--rounded {
+	border-radius: 100em;
+}
+.atom--snippet>summary {
+	outline: none;
+}
+.atom--snippet>summary::-webkit-details-marker {
+	display: none;
+}
+.atom--snippet {
+	-o-border-image: repeating-linear-gradient(to bottom, #dcdcdc, #dcdcdc 1px, transparent 1px, transparent 4px) 13;
+	border-image: repeating-linear-gradient(to bottom, #dcdcdc, #dcdcdc 1px, transparent 1px, transparent 4px) 13;
+	border-top: 13px solid black;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+	position: relative;
+
+}
+.atom--snippet[open] .atom--snippet__handle>:nth-child(1) {
+	display: none;
+}
+.atom--snippet__header {
+	margin: 0 0 16px;
+	font-weight: bold;
+}
+.atom--snippet__label {
+	display: block;
+}
+.content--pillar-news .atom--snippet__label {
+	color: black;
+}
+.atom--snippet__label {
+	font-size: 18px;
+	line-height: 22px;
+	font-family: 'Guardian Egyptian Web', Georgia, serif;
+}
+.atom--snippet__headline {
+	font-size: 18px;
+	line-height: 22px;
+	font-family: 'Guardian Egyptian Web', Georgia, serif;
+}
+.atom--snippet__label {
+	font-weight: 600;
+}
+.atom--snippet__headline {
+	font-weight: 400;
+}
+.atom--snippet__handle {
+	font-family: 'Guardian Text Sans Web', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
+.atom--snippet__feedback {
+	font-family: 'Guardian Text Sans Web', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
+.atom--snippet__handle {
+	font-size: 13px;
+	position: absolute;
+	bottom: 0;
+	transform: translate(0, 50%);
+	padding: 0 15px 0 7px;
+}
+.atom--snippet__handle, .atom--snippet__feedback .atom__button {
+	background: #121212;
+	color: black;
+}
+.content--pillar-news .atom--snippet__feedback .atom__button:hover, .content--pillar-news .atom--snippet__feedback .atom__button:focus, .content--pillar-news .atom--snippet__handle:hover, .content--pillar-news .atom--snippet__handle:focus {
+	background-color: #e00000;
+}
+.atom--snippet__handle span {
+	display: inline-flex;
+	align-items: center;
+}
+.atom--snippet__handle .icon {
+	fill: black;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+.atom--snippet__body {
+	overflow: hidden;
+
+}
+.atom--snippet__footer {
+	font-size: 13px;
+	line-height: 16px;
+	display: flex;
+	justify-content: flex-end;
+}
+.atom--snippet__feedback:not([hidden]) {
+	display: flex;
+	align-items: center;
+}
+.atom--snippet__feedback .atom__button {
+	margin: 0 0 0 5px;
+	padding: 0;
+	width: 28px;
+	height: 28px;
+}
+.atom--snippet__feedback .atom__button[value='dislike'] {
+	transform: rotate(180deg);
+}
+.atom--snippet__feedback .atom__button, .atom--snippet__feedback .icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+.atom--snippet__feedback .icon {
+	width: 16px;
+	height: 16px;
+}
+.atom--snippet__feedback path {
+	fill: currentColor;
+}
+.atom--snippet__heading {
+	font-family: 'Guardian Egyptian Web', Georgia, serif;
+	font-weight: 500;
+}
+
+/*! CSS Used from: Embedded */
+
+a {
+	background: transparent;
+}
+a:active, a:hover {
+	outline: 0;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+.button {
+	outline: 0;
+}
+::-moz-selection {
+	background: #ffe500;
+	color: #121212;
+}
+::selection {
+	background: #ffe500;
+	color: #121212;
+}
+ul {
+	list-style-position: inside;
+}
+a {
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+}
+h1, h2 {
+	margin: 0;
+}
+p {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+.social-icon {
+	width: 1.875rem;
+	height: 1.875rem;
+	border: 0.0625rem solid #121212;
+	padding: 0;
+	box-sizing: content-box;
+	background-color: transparent;
+}
+.social-icon, .social-icon:active, .social-icon:focus, .social-icon:hover {
+	text-decoration: none;
+	color: #121212;
+}
+.u-unstyled {
+	margin: 0;
+	list-style: none;
+}
+a {
+	color: #005689;
+	cursor: pointer;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	text-decoration: underline;
+}
+a:active {
+	color: #00b2ff;
+	text-decoration: none;
+}
+.u-h {
+	border: 0!important;
+	clip: rect(0 0 0 0)!important;
+	height: 0.0625rem!important;
+	margin: -0.0625rem!important;
+	overflow: hidden!important;
+	padding: 0!important;
+	position: absolute!important;
+	width: 0.0625rem!important;
+}
+.u-cf:after, .u-cf:before {
+	content: '';
+	display: table;
+}
+.u-cf:after {
+	clear: both;
+}
+ul {
+	padding: 0;
+	margin-left: 1.5625rem;
+}
+.inline-icon {
+	fill: #ffffff;
+}
+.inline-icon svg {
+	overflow: visible;
+}
+.inline-icon__fallback {
+	display: none;
+}
+.inline-icon__fallback {
+	display: none!important;
+}
+.gs-container {
+	position: relative;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 20px;
+	
+}
+@media (min-width: 46.25em) {
+	.gs-container {
+		max-width: 46.25rem;
+	}
+}
+@media (min-width: 61.25em) {
+	.gs-container {
+		max-width: 61.25rem;
+	}
+}
+@media (min-width: 71.25em) {
+	.gs-container {
+		max-width: 71.25rem;
+	}
+}
+@media (min-width: 81.25em) {
+	.gs-container {
+		max-width: 81.25rem;
+	}
+}
+@media (min-width: 46.25em) {
+	.gs-container {
+		max-width: 46.25rem;
+	}
+}
+@media (min-width: 61.25em) {
+	.gs-container {
+		max-width: 61.25rem;
+	}
+}
+@media (min-width: 71.25em) {
+	.gs-container {
+		max-width: 71.25rem;
+	}
+}
+@media (min-width: 81.25em) {
+	.gs-container {
+		max-width: 81.25rem;
+	}
+}
+.rounded-icon {
+	border-radius: 62.5rem;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+.centered-icon svg {
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	position: absolute;
+}
+.centered-icon svg {
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	position: absolute;
+}
+.content__main-column {
+	max-width: 38.75rem;
+	margin: auto;
+	position: relative;
+}
+@media (min-width: 46.25em) and (max-width: 61.24em) {
+	.content__main-column {
+		max-width: 43.75rem;
+	}
+}
+@media (min-width: 61.25em) {
+	.content__main-column {
+		margin-left: 0;
+		margin-right: 19.375rem;
+	}
+}
+@media (min-width: 71.25em) {
+	.content__main-column {
+		margin-left: 9.375rem;
+	}
+}
+@media (min-width: 81.25em) {
+	.content__main-column {
+		margin-left: 14.375rem;
+	}
+}
+.content__dateline {
+	font-size: 0.75rem;
+	line-height: 1rem;
+	font-family: "Guardian Text Sans Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	position: relative;
+	color: #767676;
+	box-sizing: border-box;
+	padding-top: 0.125rem;
+	margin-bottom: 0.375rem;
+}
+.content__dateline time {
+	display: inline-block;
+}
+.content__dateline-wpd--modified {
+	cursor: pointer;
+}
+.content__dateline-wpd--modified:hover, .content__dateline-wpd--modified:active, .content__dateline-wpd--modified:focus {
+	text-decoration: underline;
+}
+.content__dateline-lm {
+	padding-top: 0.1875rem;
+}
+@media (min-width: 71.25em) {
+	.content__dateline-lm {
+		padding-top: 0.125rem;
+	}
+}
+.meta__social {
+	padding-top: 0.375rem;
+}
+.social-icon--facebook {
+	background-color: #3067a3;
+}
+.social-icon--facebook:hover {
+	background-color: #244e7c;
+}
+.social-icon--twitter {
+	background-color: #03b3ee;
+}
+.social-icon--twitter:hover {
+	background-color: #028dbc;
+}
+.social-icon--email {
+	background-color: #767676;
+}
+.social-icon--email:hover {
+	background-color: #5d5d5d;
+}
+.social__item {
+	float: left;
+	min-width: 2rem;
+	padding: 0 0.1875rem 0.375rem 0;
+	cursor: pointer;
+}
+.social__action {
+	display: inline-block;
+}
+.social-icon {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border: 0;
+	min-width: 2rem;
+	max-width: 100%;
+	width: auto;
+	height: 2rem;
+}
+.social-icon, .social-icon:hover, .social-icon:active, .social-icon:focus {
+	color: black;
+	text-decoration: none;
+}
+.social-icon svg {
+	height: 88%;
+	width: 88%;
+}
+.bullet {
+	font-size: 0.00625rem;
+	line-height: 0.00625rem;
+	color: black;
+}
+.bullet:before {
+	display: inline-block;
+	content: '';
+	border-radius: 0.375rem;
+	height: 0.75rem;
+	width: 0.75rem;
+	margin-right: 0.125rem;
+	background-color: #dcdcdc;
+}
+/*! CSS Used from: https://assets.guim.co.uk/stylesheets/e332a34ba5d1bdc773e0bc6861988486/content.garnett.css ; media=screen */
+
+@media screen {
+	.button {
+		font-size: 0.8125rem;
+		line-height: 1.125rem;
+		font-family: "Guardian Text Sans Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		height: 1.875rem;
+		padding: 0 0.625rem;
+		margin-right: 0.625rem;
+		line-height: 1.75rem;
+		color: black;
+		background-color: #00b2ff;
+		border-color: #005689;
+		display: inline-block;
+		vertical-align: top;
+		width: auto;
+		font-weight: bold;
+		text-decoration: none;
+		border-radius: 62.5rem;
+		border-width: 0.0625rem;
+		border-style: solid;
+		box-sizing: border-box;
+	}
+	.button:hover, .button:focus, .button:active {
+		text-decoration: none;
+	}
+	.social-icon--facebook {
+		background-color: #3067a3;
+	}
+	.social-icon--facebook:hover {
+		background-color: #244e7c;
+	}
+	.social-icon--twitter {
+		background-color: #03b3ee;
+	}
+	.social-icon--twitter:hover {
+		background-color: #028dbc;
+	}
+	.social-icon--email {
+		background-color: #767676;
+	}
+	.social-icon--email:hover {
+		background-color: #5d5d5d;
+	}
+}
+/*! CSS Used from: https://assets.guim.co.uk/stylesheets/34c092721cd48ba90dfa205824941d3c/print.css ; media=print */
+
+@media print {
+	.inline-icon {
+		display: none!important;
+	}
+	* {
+		max-width: 100%!important;
+		margin: 0!important;
+		padding: 0!important;
+		border: 0!important;
+		min-height: 0!important;
+		background-color: #ffffff!important;
+		color: black!important;
+	}
+	p {
+		margin-bottom: 1rem!important;
+	}
+}
+/*! CSS Used from: Embedded */
+
+.meta__social {
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+@media (min-width: 61.25em) {
+	.meta__social {
+		margin-left: 0;
+	}
+}
+.meta__social .social-icon {
+	background-color: #ffe500;
+}
+.meta__social .social-icon svg path {
+	fill: #121212;
+}
+.content__dateline {
+	color: #121212;
+	margin-top: 24px;
+}
+.bold {
+	font-weight: 900;
+	color: black;
+}
+.pledge-head {
+	height: 50vh;
+	background-color: #ffe500;
+	margin: 20px;
+	margin-bottom: 10px;
+	position: relative;
+}
+@media (min-width: 61.25em) {
+	.pledge-head {
+		height: 80vh;
+	}
+}
+.pledge-head h1 {
+	font-size: 18px;
+	line-height: 1.1;
+	font-weight: 900;
+	max-width: 300px;
+	padding-top: 6px;
+	display: block;
+	margin-left: 6px;
+	font-family: "Guardian Headline", "Guardian Egyptian Web", "Guardian Headline Full", Georgia, serif;
+}
+@media (min-width: 46.25em) {
+	.pledge-head h1 {
+		font-size: 20px;
+		line-height: 1.2;
+		padding-top: 12px;
+		display: block;
+		margin-left: 46vw;
+	}
+}
+.cols {
+	width: 89%;
+	border-top: 40px solid #ffe500;
+	padding-top: 6px;
+	margin-left: 20px;
+}
+@media (min-width: 61.25em) {
+	.cols {
+		margin-left: 0px;
+	}
+}
+.cols p {
+	margin-left: 0;
+}
+@media (min-width: 61.25em) {
+	.cols {
+		width: 50%;
+	}
+}
+.cols.two {
+	border: none;
+	margin-bottom: 20px;
+}
+@media (min-width: 61.25em) {
+	.cols.two {
+		float: right;
+		margin-top: -50px;
+		margin-bottom: 0;
+	}
+}
+.cols a {
+	color: black;
+	text-decoration: none;
+}
+.cols a:hover {
+	text-decoration: none;
+}
+.cols .cta:hover {
+	background-color: #121212;
+	color: black;
+}
+.pledge-head-text {
+	width: 100%;
+}
+
+.pledge-head-text .cols {
+	border-top: none;
+	display: none;
+	width: 300px;
+	margin-top: 28px;
+}
+@media (min-width: 46.25em) {
+	.pledge-head-text .cols {
+		display: block;
+		margin-left: 46vw;
+	}
+}
+.pledge-head-text:after {
+	display: block;
+	content: '';
+	height: 22vh;
+	width: 20%;
+	position: absolute;
+	top: 16vh;
+	left: 25%;
+	background-image: url(https://uploads.guim.co.uk/2019/10/10/pen-01.png);
+	background-repeat: no-repeat;
+	mix-blend-mode: multiply;
+	background-size: 100%;
+	background-position: bottom;
+}
+@media (min-width: 61.25em) {
+	.pledge-head-text:after {
+		top: 0;
+		height: 80vh;
+		left: 27%;
+		width: 16%;
+	}
+}
+.pledge-head-text svg {
+	width: 100%;
+	height: auto;
+}
+p {
+	line-height: 1.3;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+@media (min-width: 61.25em) {
+	p {
+		margin-left: 0px;
+	}
+}
+p.bullet {
+	font-size: inherit;
+	line-height: 1.3;
+	color: black;
+}
+p.bullet:before {
+	background-color: #ffe500;
+}
+p.intro-mobile {
+	display: block;
+}
+@media (min-width: 61.25em) {
+	p.intro-mobile {
+		display: none;
+	}
+}
+p.intro {
+	font-weight: 900;
+	color: black;
+}
+.cta {
+	background-color: #ffe500;
+	display: inline;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-top: 10px;
+	padding-bottom: 12px;
+	border-radius: 25px;
+	font-family: "Guardian Text Sans Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 800;
+}
+@media (min-width: 61.25em) {
+	.cta {
+		margin-left: 58px;
+	}
+}
+.cta.bottom {
+	margin-left: 20px;
+	margin-top: 10px;
+	display: inline-block;
+}
+@media (min-width: 61.25em) {
+	.cta.bottom {
+		margin-left: 0;
+	}
+}
+h1.bottom {
+	margin-left: 20px;
+	display: block;
+	font-family: "Guardian Headline", "Guardian Egyptian Web", "Guardian Headline Full", Georgia, serif;
+}
+@media (min-width: 61.25em) {
+	h1.bottom {
+		margin-left: 0;
+	}
+}
+a.bottom {
+	color: black;
+}
+.statement {
+	margin-bottom: 30px;
+}
+.statement svg {
+	width: 100%;
+	height: auto;
+}
+.divider {
+	display: block;
+	height: 1px;
+	background-color: #e6e6e6;
+	margin-top: 24px;
+}
+.pullquotes {
+	margin-left: 20px;
+	border-top: 40px solid #ffe500;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+@media (min-width: 81.25em) {
+	.pullquotes {
+		margin-left: 0;
+		position: absolute;
+		width: 240px;
+		left: -260px;
+	}
+}
+.pullquotes .pq-header {
+	line-height: 1.2;
+	padding-top: 3px;
+	font-weight: 900;
+}
+.pullquotes .pq-header span {
+	font-style: italic;
+	display: block;
+	font-weight: 200;
+}
+.pullquotes .pq-link h1 {
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 1.2;
+	margin-bottom: 0;
+	margin-top: 20px;
+	border-top: 1px solid #121212;
+	font-family: "Guardian Headline", "Guardian Egyptian Web", "Guardian Headline Full", Georgia, serif;
+	font-weight: 400;
+}
+.pullquotes .pq-link h1:hover {
+	border-top: solid #ffe500;
+}
+.pullquotes .pq-link h2 {
+	margin-top: 6px;
+	font-size: 20px;
+	line-height: 1.2;
+}
+.pullquotes .pq-link h2 span {
+	font-weight: 200;
+	font-style: italic;
+	display: block;
+}
+.quote a {
+	color: black;
+	text-decoration: none;
+}
+.slim-contributions-ask {
+	background-color: #041f4a;
+	padding-top: 6px;
+	padding-bottom: 8px;
+	display: none;
+}
+@media (min-width: 61.25em) {
+	.slim-contributions-ask {
+		display: block;
+	}
+}
+.slim-contributions-ask .gs-container {
+	display: flex;
+}
+.slim-contributions-ask .gs-container .cta {
+	padding-top: 3px;
+	padding-bottom: 4px;
+	margin-left: 20px;
+	margin-top: 4px;
+}
+.slim-contributions-ask h2 {
+	font-family: "Guardian Headline", "Guardian Egyptian Web", "Guardian Headline Full", Georgia, serif;
+	color: #ffe500;
+}
+@media (min-width: 46.25em) {
+	.slim-contributions-ask h2 {
+		margin-left: 20px;
+	}
+}
+
+
+
+
+}

@@ -1,0 +1,37 @@
+<div class="nav-controls">
+
+    <div class="controls guardian-badge"></div>
+
+    <div class="player-controls">
+
+        <div on-tap="['play']" class="controls {{#if isPlaying}} video_play{{else}} video_pause{{/if}}" id="progress" style="visibility: {{#if showControls}}visible{{else}}hidden{{/if}}"></div>
+
+        {{#if hasAudio}}<div on-tap="['mute']" class="controls {{#if isMuted}}muted{{else}}unmuted{{/if}}"></div>{{/if}}
+
+    </div>
+
+</div>
+
+<div id="sunscreen" class="{{#if overlay}}lunar{{else}}solar{{/if}}"></div>
+
+<div class="background {{#if hasAudio}}day{{else}}night{{/if}}">
+
+    {{#each videos}}
+
+        <div class="panel {{#if primary}}cinema-foreground{{else}}cinema-background{{/if}}" data-id="{{this.vid}}">
+
+            <div class="video-wrapper {{this.display}}">
+                <video id="media-element-{{this.vid}}" class="frontline-media" {{#if loop}}loop{{/if}} {{#if muted}}muted{{/if}} {{#if autoplay}}autoplay{{/if}} playsinline data-id="{{this.vid}}">
+
+                </video>
+            </div>    
+            
+        </div>
+
+    {{/each}}
+
+ </div>
+
+ <!--div class="console">{{{consoler}}}</div-->
+
+
